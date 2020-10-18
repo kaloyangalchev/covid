@@ -1,0 +1,38 @@
+@import 'src/assets/styles/variables';
+@import 'src/assets/styles/mixins/breakpoints';
+
+.header {
+    width: 100%;
+    background-color: $color-blue;
+    color: $color-white;
+    box-sizing: border-box;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin: auto;
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        max-width: $breakpoint-desktop-max;
+
+        @include tablet {
+            max-width: $breakpoint-mobile-max;
+        }
+
+        @include desktop {
+            max-width: $breakpoint-tablet-max;
+        }
+    }
+
+    &__heading {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+    &__subheading {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,37 @@
+@import "src/assets/styles/variables";
+
+@mixin mobile {
+    @media only screen and (max-width: $breakpoint-mobile-max){
+        @content;
+     }
+}
+
+@mixin all-but-mobile {
+    @media only screen and (min-width: $breakpoint-tablet-min){
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media only screen and (min-width: $breakpoint-tablet-min) and (max-width: $breakpoint-tablet-max){
+        @content;
+     }
+}
+
+@mixin desktop {
+    @media only screen and (min-width: $breakpoint-desktop-min) and (max-width: $breakpoint-desktop-max){
+        @content;
+     }
+}
+
+@mixin all-desktop {
+    @media only screen and (min-width: $breakpoint-desktop-min) {
+        @content;
+     }
+}
+
+@mixin all-but-large-desktop {
+    @media only screen and (min-width: $breakpoint-desktop-min) {
+        @content;
+     }
+}

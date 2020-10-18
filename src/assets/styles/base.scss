@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import 'src/assets/styles/variables';
+
+html, body, #root {
+    display: block;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: $color-white;
+    min-width: $breakpoint-mobile-min;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a {
+    margin: 0px;
+    padding: 0px;
+    font-weight: normal;
+    letter-spacing: normal;
+    line-height: 1.2;
+    font-family: 'Roboto', sans-serif;
+}

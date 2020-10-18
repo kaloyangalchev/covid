@@ -1,0 +1,34 @@
+@import 'src/assets/styles/mixins/breakpoints';
+
+.history {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100%;
+
+    &__main-content {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex: 1;
+        margin: auto;
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        max-width: $breakpoint-desktop-max;
+
+        @include mobile {
+            flex-direction: column;
+        }
+
+        @include tablet {
+            max-width: $breakpoint-mobile-max;
+        }
+
+        @include desktop {
+            max-width: $breakpoint-tablet-max;
+        }
+    }
+}
